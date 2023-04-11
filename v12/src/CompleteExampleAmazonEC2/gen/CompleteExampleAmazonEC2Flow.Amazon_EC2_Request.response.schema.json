@@ -1,0 +1,347 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Description": {
+        "displayOrder": 1,
+        "title": "Description",
+        "description": "The description of the security group",
+        "type": "string"
+      },
+      "GroupId": {
+        "displayOrder": 2,
+        "title": "Group ID",
+        "description": "The ID of the security group",
+        "type": "string"
+      },
+      "GroupName": {
+        "displayOrder": 3,
+        "title": "Group name",
+        "description": "The name of the security group",
+        "type": "string"
+      },
+      "IpPermissions": {
+        "displayOrder": 4,
+        "title": "IP permissions",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "FromPort": {
+              "displayOrder": 1,
+              "title": "From port",
+              "type": "number"
+            },
+            "IpProtocol": {
+              "displayOrder": 2,
+              "title": "IP protocol",
+              "type": "string"
+            },
+            "IpRanges": {
+              "displayOrder": 3,
+              "title": "IP ranges",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "CidrIp": {
+                    "displayOrder": 1,
+                    "title": "Cidr IP",
+                    "type": "string"
+                  },
+                  "Description": {
+                    "displayOrder": 2,
+                    "title": "Description",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            },
+            "Ipv6Ranges": {
+              "displayOrder": 4,
+              "title": "IPv6 ranges",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "CidrIpv6": {
+                    "displayOrder": 1,
+                    "title": "Cidr IPv6",
+                    "type": "string"
+                  },
+                  "Description": {
+                    "displayOrder": 2,
+                    "title": "Description",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            },
+            "PrefixListIds": {
+              "displayOrder": 5,
+              "title": "Prefix list IDs",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Description": {
+                    "displayOrder": 1,
+                    "title": "Description",
+                    "type": "string"
+                  },
+                  "PrefixListId": {
+                    "displayOrder": 2,
+                    "title": "Prefix list ID",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            },
+            "ToPort": {
+              "displayOrder": 6,
+              "title": "To port",
+              "type": "number"
+            },
+            "UserIdGroupPairs": {
+              "displayOrder": 7,
+              "title": "User ID group pairs",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Description": {
+                    "displayOrder": 1,
+                    "title": "Description",
+                    "type": "string"
+                  },
+                  "GroupId": {
+                    "displayOrder": 2,
+                    "title": "Group ID",
+                    "type": "string"
+                  },
+                  "GroupName": {
+                    "displayOrder": 3,
+                    "title": "Group name",
+                    "type": "string"
+                  },
+                  "PeeringStatus": {
+                    "displayOrder": 4,
+                    "title": "Peering status",
+                    "type": "string"
+                  },
+                  "UserId": {
+                    "displayOrder": 5,
+                    "title": "User ID",
+                    "type": "string"
+                  },
+                  "VpcId": {
+                    "displayOrder": 6,
+                    "title": "VPC ID",
+                    "type": "string"
+                  },
+                  "VpcPeeringConnectionId": {
+                    "displayOrder": 7,
+                    "title": "VPC peering connection ID",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalItems": false
+      },
+      "IpPermissionsEgress": {
+        "displayOrder": 5,
+        "title": "IP permissions egress",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "FromPort": {
+              "displayOrder": 1,
+              "title": "From port",
+              "type": "number"
+            },
+            "IpProtocol": {
+              "displayOrder": 2,
+              "title": "IP protocol",
+              "type": "string"
+            },
+            "IpRanges": {
+              "displayOrder": 3,
+              "title": "IP ranges",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "CidrIp": {
+                    "displayOrder": 1,
+                    "title": "Cidr IP",
+                    "type": "string"
+                  },
+                  "Description": {
+                    "displayOrder": 2,
+                    "title": "Description",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            },
+            "Ipv6Ranges": {
+              "displayOrder": 4,
+              "title": "IPv6 ranges",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "CidrIpv6": {
+                    "displayOrder": 1,
+                    "title": "Cidr IPv6",
+                    "type": "string"
+                  },
+                  "Description": {
+                    "displayOrder": 2,
+                    "title": "Description",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            },
+            "PrefixListIds": {
+              "displayOrder": 5,
+              "title": "Prefixlist IDs",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Description": {
+                    "displayOrder": 1,
+                    "title": "Description",
+                    "type": "string"
+                  },
+                  "PrefixListId": {
+                    "displayOrder": 2,
+                    "title": "Prefixlist ID",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            },
+            "ToPort": {
+              "displayOrder": 6,
+              "title": "To port",
+              "type": "number"
+            },
+            "UserIdGroupPairs": {
+              "displayOrder": 7,
+              "title": "User ID group pairs",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Description": {
+                    "displayOrder": 1,
+                    "title": "Description",
+                    "type": "string"
+                  },
+                  "GroupId": {
+                    "displayOrder": 2,
+                    "title": "Group ID",
+                    "type": "string"
+                  },
+                  "GroupName": {
+                    "displayOrder": 3,
+                    "title": "Group name",
+                    "type": "string"
+                  },
+                  "PeeringStatus": {
+                    "displayOrder": 4,
+                    "title": "Peering status",
+                    "type": "string"
+                  },
+                  "UserId": {
+                    "displayOrder": 5,
+                    "title": "User ID",
+                    "type": "string"
+                  },
+                  "VpcId": {
+                    "displayOrder": 6,
+                    "title": "VPC ID",
+                    "type": "string"
+                  },
+                  "VpcPeeringConnectionId": {
+                    "displayOrder": 7,
+                    "title": "VPC peering connection ID",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "additionalItems": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalItems": false
+      },
+      "OwnerId": {
+        "displayOrder": 6,
+        "title": "Owner ID",
+        "description": "The Amazon Web Services account ID of the owner of the security group.",
+        "type": "string"
+      },
+      "Tags": {
+        "displayOrder": 7,
+        "title": "Tags",
+        "description": "The key and value combination of a tag that is assigned to the resource. Use the tag key in the filter name and tag value as the filter value. For example, to find the resources that have a tag with the key owner and value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "displayOrder": 1,
+              "title": "Key",
+              "description": "The key of a tag assigned to the resource. Use this filter to find all the resources assigned to a tag with a specific key, regardless of the tag value.",
+              "type": "string"
+            },
+            "Value": {
+              "displayOrder": 2,
+              "title": "Value",
+              "description": "The value of a key that is assigned to the resource",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalItems": false
+      },
+      "VpcId": {
+        "displayOrder": 8,
+        "title": "VPC ID",
+        "description": "The ID of the VPC, which is specified when the security group was created",
+        "type": "string"
+      }
+    },
+    "title": "SecurityGroup",
+    "additionalProperties": false
+  },
+  "type": "array",
+  "title": "SecurityGroup"
+}
